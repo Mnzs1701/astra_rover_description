@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<robot name="astra_rover" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    	<!-- Robot Mechanical Description-->
+	<xacro:include filename="$(find astra_rover_description)/urdf/astra_rover_mechdesc.xacro" />
+	<!-- Gazebo aspects of the robot -->
+	<xacro:include filename="$(find astra_rover_description)/urdf/astra_rover.gazebo" />
+	<!--
+	<!-- Chasis -->
+	<xacro:include filename="$(find astra_rover_description)/urdf/chassis.xacro" />
+	<!-- Wheel Groups -->
+	<xacro:include filename="$(find astra_rover_description)/urdf/wheel.xacro" />
+	<xacro:include filename="$(find astra_rover_description)/urdf/left_wheel_group.xacro" />
+	<xacro:include filename="$(find astra_rover_description)/urdf/right_wheel_group.xacro" />
+	<!-- Arm -->
+	<xacro:include filename="$(find astra_rover_description)/urdf/arm.xacro" />
+	<!-- Sensor Mast -->
+	<xacro:include filename="$(find astra_rover_description)/urdf/sensor_mast.xacro" />
+	-->
+	<astra_rover_mechdesc/>
+	
+
+</robot>
